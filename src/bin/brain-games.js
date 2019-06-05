@@ -4,6 +4,6 @@ import sayMyName from '..';
 const welcome = () => console.log('Welcome to the Brain Games');
 
 welcome();
-sayMyName(); // Heisenberg
+sayMyName();
 
 
