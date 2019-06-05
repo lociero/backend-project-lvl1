@@ -1,7 +1,9 @@
 #!/usr/bin/env node
-const sayHi = () => {
-  const string = 'Welcome to the Brain Games';
-  console.log(string);
-};
+import sayMyName from '..';
 
-sayHi();
+const welcome = () => console.log('Welcome to the Brain Games');
+
+welcome();
+sayMyName(); // Heisenberg
+
+
