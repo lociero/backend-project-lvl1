@@ -5,4 +5,4 @@ start:
 publish:
 	npm publish --dry-run
 lint:
-	npx eslint /mnt/e/learningJS/hexletProjects/BrainGames/
+	npx eslint /mnt/e/learningJS/hexletProjects/BrainGames/src/*
