@@ -4,3 +4,4 @@ import askUserName from '..';
 
 welcome();
 askUserName();
+// startGame();
