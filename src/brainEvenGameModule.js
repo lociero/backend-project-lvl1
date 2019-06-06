@@ -21,7 +21,7 @@ export const startGame = () => {
     const value = getRandomInt(100);
     const yourAnswer = readlineSync.question(`Question: ${value}\nYour answer: `);
     const correctAnswer = isEven(value) ? 'yes' : 'no';
-    if (yourAnswer !== correctAnswer) {
+    if (yourAnswer === correctAnswer) {
       console.log('Correct!');
       // eslint-disable-next-line
       return iter(counter + 1);
