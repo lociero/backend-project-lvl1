@@ -1,7 +1,8 @@
+// eslint-disable-next-line import/no-extraneous-dependencies
 import readlineSync from 'readline-sync';
-
 // asking a user's name
-export default () => {
-	const userName = readlineSync.question('What is your name? ');
-	console.log(`Hi, ${userName}!`);
+const sayMyName = () => {
+  const userName = readlineSync.question('What is your name? ');
+  console.log(`Hi, ${userName}!`);
 };
+export default sayMyName;
