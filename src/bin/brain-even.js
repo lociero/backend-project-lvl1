@@ -5,5 +5,4 @@ import { showRules, startGame } from '../brainEvenGameModule';
 
 welcome();
 showRules();
-askUserName();
 startGame(askUserName());
