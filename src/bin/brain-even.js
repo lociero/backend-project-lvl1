@@ -1,8 +1,9 @@
 #!/usr/bin/env node
 import welcome from '../welcome';
 import askUserName from '..';
-import { showRules, startGame } from '../games/brain-even-module';
+import { showRules, brainEven } from '../games/brain-even-module';
+import startGame from '../startGame-module';
 
 welcome();
 showRules();
-startGame(askUserName());
+startGame(askUserName(), brainEven);
