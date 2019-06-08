@@ -8,3 +8,14 @@ export const brainEven = () => {
   const correctAnswer = isEven(value) ? 'yes' : 'no';
   return str => (str === 'question' ? value : correctAnswer);
 };
+
+/*
+const brainEvenV2 = () => {
+  const value = getRandomInt(100);
+  const correctAnswer = isEven(value) ? 'yes' : 'no';
+  return {
+    answer: correctAnswer,
+    question: value,
+  };
+};
+*/
