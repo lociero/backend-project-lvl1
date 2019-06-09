@@ -9,7 +9,6 @@ $ make install
 $ make publish
 $ sudo npm link
 $ brain-games
-even ### brain-even / brain-calc / brain-gcd / brain-progression
 ENJOY =)
 ```
 ### For example install and brain-progression game (asciinema):  
