@@ -11,7 +11,5 @@ sudo npm link
 brain-even ### brain-even / brain-calc / brain-gcd / brain-progression
 ENJOY =)
 ```
-> BrainEven  
-[![asciicast](https://asciinema.org/a/iF4cISeRhusmxOlJZQNbSfSH2.svg)](https://asciinema.org/a/iF4cISeRhusmxOlJZQNbSfSH2)  
-> BrainCalc  
-[![asciicast](https://asciinema.org/a/8bR3yhxoj5ipSAf5PgEFbJm92.svg)](https://asciinema.org/a/8bR3yhxoj5ipSAf5PgEFbJm92)
+### For example (asciinema):  
+[![asciicast](https://asciinema.org/a/4i6g4OdRkwXdml6MazmRqUTD8.svg)](https://asciinema.org/a/4i6g4OdRkwXdml6MazmRqUTD8)
