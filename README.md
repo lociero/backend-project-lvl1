@@ -23,7 +23,7 @@ $ brain-even
 [![asciicast](https://asciinema.org/a/sYOUttwxj1aTr5KgdPc2btUdb.svg)](https://asciinema.org/a/sYOUttwxj1aTr5KgdPc2btUdb)  
 ### BrainGcd game:
 ```
-$ brain--gcd
+$ brain-gcd
 ```
 [![asciicast](https://asciinema.org/a/7TyhTeNI0sJZKWBU8ErNkjLrG.svg)](https://asciinema.org/a/7TyhTeNI0sJZKWBU8ErNkjLrG)  
 ### BrainPrime game:
