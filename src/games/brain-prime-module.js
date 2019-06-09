@@ -15,6 +15,6 @@ const isPrime = (num) => {
 
 export const brainPrime = () => {
   const num = getRandomInt(1, 100);
-  const correctAnswer = isPrime(num) === true ? 'yes' : 'no';
+  const correctAnswer = isPrime(num) ? 'yes' : 'no';
   return str => (str === 'question' ? num : correctAnswer);
 };
