@@ -1,7 +1,8 @@
 {
   "name": "braingames",
   "version": "1.0.0",
-  "description": "hexlet project 1lvl js",
+  "description": "Games for your Brains. Hexlet project 1st lvl js",
+  "keywords": ["logic", "games", "js"],
   "main": "index.js",
   "bin": {
     "brain-games": "dist/bin/brain-games.js",
