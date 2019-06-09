@@ -3,12 +3,12 @@
 [![Build Status](https://travis-ci.org/lociero/backend-project-lvl1.svg?branch=master)](https://travis-ci.org/lociero/backend-project-lvl1)  
 # How to install and use:  
 ```
-git clone git@github.com:lociero/backend-project-lvl1.git
-cd backend-project-lvl1
-make install
-make publish
-sudo npm link
-brain-even ### brain-even / brain-calc / brain-gcd / brain-progression
+$ git clone git@github.com:lociero/backend-project-lvl1.git
+$ cd backend-project-lvl1
+$ make install
+$ make publish
+$ sudo npm link
+$ brain-even ### brain-even / brain-calc / brain-gcd / brain-progression
 ENJOY =)
 ```
 ### For example (asciinema):  
