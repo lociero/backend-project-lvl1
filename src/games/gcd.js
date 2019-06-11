@@ -21,6 +21,6 @@ const brainGcd = () => {
     answer: correctAnswer,
     question,
   };
-}; // comment
+};
 
 export default () => startGame(rules, brainGcd);

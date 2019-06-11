@@ -1,5 +1,6 @@
-export const showRules = () => console.log('Answer "yes" if given number is prime. Otherwise answer "no".\n');
-const getRandomInt = (min, max) => Math.floor(Math.random() * (max - min + 1)) + min;
+import { getRandomInt, startGame } from '..';
+
+const rules = 'Answer "yes" if given number is prime. Otherwise answer "no".\n';
 
 const isPrime = (num) => {
   if (num <= 1) {
@@ -13,8 +14,14 @@ const isPrime = (num) => {
   return true;
 };
 
-export const brainPrime = () => {
+const brainPrime = () => {
   const num = getRandomInt(1, 100);
   const correctAnswer = isPrime(num) ? 'yes' : 'no';
-  return str => (str === 'question' ? num : correctAnswer);
+
+  return {
+    answer: correctAnswer,
+    question: num,
+  };
 };
+
+export default () => startGame(rules, brainPrime);

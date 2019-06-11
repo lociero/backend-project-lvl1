@@ -1,5 +1,4 @@
 #!/usr/bin/env node
-import { welcome, askUserName } from '..';
+import start from '../games/brain-games';
 
-welcome();
-askUserName();
+start();
