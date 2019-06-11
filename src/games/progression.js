@@ -19,6 +19,7 @@ const brainProgression = () => {
   const correctAnswer = progression[indexForChange];
   progression[indexForChange] = '..';
   const question = progression.join(' ');
+
   return {
     answer: correctAnswer,
     question,
