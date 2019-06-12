@@ -1,6 +1,7 @@
-import { welcome, askUserName } from '..';
+import readlineSync from 'readline-sync';
 
 export default () => {
-  welcome();
-  askUserName();
+  console.log('Welcome to the Brain Games!');
+  const userName = readlineSync.question('What is your name? ');
+  console.log(`Hi, ${userName}!\n`);
 };

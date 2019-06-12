@@ -1,4 +1,5 @@
-import { getRandomInt, startGame } from '..';
+import startGame from '..';
+import getRandomInt from '../utils';
 
 const description = 'Find the greatest common divisor of given numbers.\n';
 
