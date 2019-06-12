@@ -11,7 +11,9 @@ const initBrainProgression = () => {
       const newAcc = acc.concat(acc[acc.length - 1] + step);
       return iter(step, newAcc);
     };
-    return iter(getRandomInt(1, 5), [getRandomInt(0, 10)]);
+    const stepSize = getRandomInt(1, 5);
+    const startNumber = getRandomInt(0, 10);
+    return iter(stepSize, [startNumber]);
   };
 
   const progression = getRandomProgression(10);
