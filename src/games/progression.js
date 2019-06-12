@@ -4,6 +4,8 @@ import getRandomInt from '../utils';
 const description = 'What number is missing in the progression?\n';
 
 const initBrainProgression = () => {
+  const lengthOfProgression = 10;
+
   const getRandomProgression = (length = 10) => {
     const iter = (step, acc) => {
       if (acc.length === length) {
@@ -17,7 +19,7 @@ const initBrainProgression = () => {
     return iter(stepSize, [startNumber]);
   };
 
-  const progression = getRandomProgression();
+  const progression = getRandomProgression(lengthOfProgression);
   const indexForChange = getRandomInt(1, progression.length - 2);
   const correctAnswer = progression[indexForChange];
   progression[indexForChange] = '..';
