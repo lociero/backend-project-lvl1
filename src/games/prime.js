@@ -1,6 +1,6 @@
 import { getRandomInt, startGame } from '..';
 
-const rules = 'Answer "yes" if given number is prime. Otherwise answer "no".\n';
+const description = 'Answer "yes" if given number is prime. Otherwise answer "no".\n';
 
 const brainPrime = () => {
   const isPrime = (num) => {
@@ -24,4 +24,4 @@ const brainPrime = () => {
   };
 };
 
-export default () => startGame(rules, brainPrime);
+export default () => startGame(description, brainPrime);

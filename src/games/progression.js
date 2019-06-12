@@ -1,6 +1,6 @@
 import { getRandomInt, startGame } from '..';
 
-const rules = 'What number is missing in the progression?\n';
+const description = 'What number is missing in the progression?\n';
 
 const brainProgression = () => {
   const getRandomProgression = (length) => {
@@ -26,4 +26,4 @@ const brainProgression = () => {
   };
 };
 
-export default () => startGame(rules, brainProgression);
+export default () => startGame(description, brainProgression);

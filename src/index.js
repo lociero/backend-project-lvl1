@@ -10,9 +10,9 @@ export const askUserName = () => {
   return userName;
 };
 
-export const startGame = (rules, initGame) => {
+export const startGame = (description, initGame) => {
   welcome();
-  console.log(rules);
+  console.log(description);
   const userName = askUserName();
 
   const iter = (gameRound) => {

@@ -1,6 +1,6 @@
 import { getRandomInt, startGame } from '..';
 
-const rules = 'What is the result of the expression?\n';
+const description = 'What is the result of the expression?\n';
 
 const brainCalc = () => {
   const operations = {
@@ -35,4 +35,4 @@ const brainCalc = () => {
   };
 };
 
-export default () => startGame(rules, brainCalc);
+export default () => startGame(description, brainCalc);
