@@ -8,6 +8,7 @@ const initBrainCalc = () => {
     1: '+',
     2: '-',
     3: '*',
+    random: () => operations[getRandomInt(1, Object.keys(operations).length - 1)],
   };
 
   const calculate = (num1, num2, operation) => {
@@ -23,7 +24,7 @@ const initBrainCalc = () => {
 
   const num1 = getRandomInt(0, 10);
   const num2 = getRandomInt(0, 10);
-  const operation = operations[getRandomInt(1, 3)];
+  const operation = operations.random();
 
   const correctAnswer = calculate(num1, num2, operation);
   const question = `${num1} ${operation} ${num2}`;
