@@ -15,12 +15,12 @@ const isPrime = (num) => {
 };
 
 const initBrainPrime = () => {
-  const num = getRandomInt(1, 100);
-  const correctAnswer = isPrime(num) ? 'yes' : 'no';
+  const question = getRandomInt(1, 100);
+  const correctAnswer = isPrime(question) ? 'yes' : 'no';
 
   return {
     answer: correctAnswer,
-    question: num,
+    question,
   };
 };
 
