@@ -15,10 +15,8 @@ const initBrainCalc = () => {
         return num1 + num2;
       case '-':
         return num1 - num2;
-      case '*':
-        return num1 * num2;
       default:
-        return console.log('undefined operation');
+        return num1 * num2;
     }
   };
 
