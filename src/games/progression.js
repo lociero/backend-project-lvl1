@@ -2,7 +2,7 @@ import { getRandomInt, startGame } from '..';
 
 const description = 'What number is missing in the progression?\n';
 
-const brainProgression = () => {
+const initBrainProgression = () => {
   const getRandomProgression = (length) => {
     const iter = (step, acc) => {
       if (acc.length === length) {
@@ -26,4 +26,4 @@ const brainProgression = () => {
   };
 };
 
-export default () => startGame(description, brainProgression);
+export default () => startGame(description, initBrainProgression);

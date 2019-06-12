@@ -2,7 +2,7 @@ import { getRandomInt, startGame } from '..';
 
 const description = 'Answer "yes" if number even otherwise answer "no".\n';
 
-const brainEvenV2 = () => {
+const initBrainEven = () => {
   const isEven = num => num % 2 === 0;
 
   const value = getRandomInt(0, 100);
@@ -14,4 +14,4 @@ const brainEvenV2 = () => {
   };
 };
 
-export default () => startGame(description, brainEvenV2);
+export default () => startGame(description, initBrainEven);
