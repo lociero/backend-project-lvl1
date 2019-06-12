@@ -7,17 +7,22 @@ export default (description, initGame) => {
   const userName = readlineSync.question('What is your name? ');
   console.log(`Hi, ${userName}!\n`);
 
-  const iter = (gameRound) => {
-    if (gameRound === 4) {
-      return console.log(`Congratulations, ${userName}!`);
+  const totalRounds = 3;
+
+  const iter = (gameRounds) => {
+    if (gameRounds === 0) {
+      console.log(`Congratulations, ${userName}!`);
+      return 0;
     }
     const { answer: correctAnswer, question } = initGame();
     const userAnswer = readlineSync.question(`Question: ${question}\nYour answer: `);
     if (userAnswer !== String(correctAnswer)) {
-      return console.log(`'${userAnswer}' is wrong answer =(. Correct answer was '${correctAnswer}'.\nLet's try again, ${userName}!`);
+      console.log(`'${userAnswer}' is wrong answer =(. Correct answer was '${correctAnswer}'.`);
+      console.log(`Let's try again, ${userName}!`);
+      return 0;
     }
     console.log('Correct!');
-    return iter(gameRound + 1);
+    return iter(gameRounds - 1);
   };
-  return iter(1);
+  return iter(totalRounds);
 };
