@@ -19,10 +19,7 @@ const initBrainPrime = () => {
   const question = getRandomInt(1, 100);
   const correctAnswer = isPrime(question) ? 'yes' : 'no';
 
-  return {
-    answer: correctAnswer,
-    question,
-  };
+  return { correctAnswer, question };
 };
 
 export default () => startGame(description, initBrainPrime);

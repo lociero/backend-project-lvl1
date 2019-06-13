@@ -29,10 +29,7 @@ const initBrainCalc = () => {
   const correctAnswer = calculate(num1, num2, operation);
   const question = `${num1} ${operation} ${num2}`;
 
-  return {
-    answer: correctAnswer,
-    question,
-  };
+  return { correctAnswer, question };
 };
 
 export default () => startGame(description, initBrainCalc);

@@ -9,10 +9,7 @@ const initBrainEven = () => {
   const question = getRandomInt(0, 100);
   const correctAnswer = isEven(question) ? 'yes' : 'no';
 
-  return {
-    answer: correctAnswer,
-    question,
-  };
+  return { correctAnswer, question };
 };
 
 export default () => startGame(description, initBrainEven);

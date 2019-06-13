@@ -25,10 +25,7 @@ const initBrainProgression = () => {
   progression[indexForChange] = '..';
   const question = progression.join(' ');
 
-  return {
-    answer: correctAnswer,
-    question,
-  };
+  return { correctAnswer, question };
 };
 
 export default () => startGame(description, initBrainProgression);

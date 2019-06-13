@@ -19,10 +19,7 @@ const initBrainGcd = () => {
   const question = `${num1} ${num2}`;
   const correctAnswer = findGcd(num1, num2);
 
-  return {
-    answer: correctAnswer,
-    question,
-  };
+  return { correctAnswer, question };
 };
 
 export default () => startGame(description, initBrainGcd);
