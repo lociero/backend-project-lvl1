@@ -21,7 +21,7 @@ const generateData = () => {
   const num2 = getRandomInt(0, 10);
   const operation = operations[getRandomInt(0, operations.length - 1)];
 
-  const correctAnswer = calculate(num1, num2, operation);
+  const correctAnswer = `${calculate(num1, num2, operation)}`;
   const question = `${num1} ${operation} ${num2}`;
 
   return { correctAnswer, question };

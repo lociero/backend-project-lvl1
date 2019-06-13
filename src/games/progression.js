@@ -19,7 +19,7 @@ const generateData = () => {
 
   const progression = generateProgression(stepSize, [startNumber], lengthOfProgression);
   const indexForChange = getRandomInt(1, lengthOfProgression - 2);
-  const correctAnswer = progression[indexForChange];
+  const correctAnswer = `${progression[indexForChange]}`;
   progression[indexForChange] = '..';
   const question = progression.join(' ');
 

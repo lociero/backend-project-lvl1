@@ -17,7 +17,7 @@ const generateData = () => {
   const num1 = getRandomInt(1, 25);
   const num2 = getRandomInt(1, 25);
   const question = `${num1} ${num2}`;
-  const correctAnswer = findGcd(num1, num2);
+  const correctAnswer = `${findGcd(num1, num2)}`;
 
   return { correctAnswer, question };
 };
