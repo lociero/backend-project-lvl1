@@ -4,12 +4,7 @@ import getRandomInt from '../utils';
 const description = 'What is the result of the expression?';
 
 const generateData = () => {
-  const operations = {
-    1: '+',
-    2: '-',
-    3: '*',
-    random: () => operations[getRandomInt(1, Object.keys(operations).length - 1)],
-  };
+  const operations = ['+', '-', '*'];
 
   const calculate = (num1, num2, operation) => {
     switch (operation) {
@@ -24,7 +19,7 @@ const generateData = () => {
 
   const num1 = getRandomInt(0, 10);
   const num2 = getRandomInt(0, 10);
-  const operation = operations.random();
+  const operation = operations[getRandomInt(0, operations.length - 1)];
 
   const correctAnswer = calculate(num1, num2, operation);
   const question = `${num1} ${operation} ${num2}`;
