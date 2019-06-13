@@ -13,7 +13,7 @@ const findGcd = (num1, num2) => {
   return iter(Math.min(num1, num2));
 };
 
-const initBrainGcd = () => {
+const generateData = () => {
   const num1 = getRandomInt(1, 25);
   const num2 = getRandomInt(1, 25);
   const question = `${num1} ${num2}`;
@@ -22,4 +22,4 @@ const initBrainGcd = () => {
   return { correctAnswer, question };
 };
 
-export default () => startGame(description, initBrainGcd);
+export default () => startGame(description, generateData);

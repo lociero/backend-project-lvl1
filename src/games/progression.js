@@ -3,7 +3,7 @@ import getRandomInt from '../utils';
 
 const description = 'What number is missing in the progression?\n';
 
-const initBrainProgression = () => {
+const generateData = () => {
   const lengthOfProgression = 10;
 
   const getRandomProgression = (length = 10) => {
@@ -28,4 +28,4 @@ const initBrainProgression = () => {
   return { correctAnswer, question };
 };
 
-export default () => startGame(description, initBrainProgression);
+export default () => startGame(description, generateData);

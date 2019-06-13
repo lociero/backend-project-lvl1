@@ -15,11 +15,11 @@ const isPrime = (num) => {
   return true;
 };
 
-const initBrainPrime = () => {
+const generateData = () => {
   const question = getRandomInt(1, 100);
   const correctAnswer = isPrime(question) ? 'yes' : 'no';
 
   return { correctAnswer, question };
 };
 
-export default () => startGame(description, initBrainPrime);
+export default () => startGame(description, generateData);

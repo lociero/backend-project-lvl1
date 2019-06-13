@@ -3,7 +3,7 @@ import getRandomInt from '../utils';
 
 const description = 'What is the result of the expression?\n';
 
-const initBrainCalc = () => {
+const generateData = () => {
   const operations = {
     1: '+',
     2: '-',
@@ -32,4 +32,4 @@ const initBrainCalc = () => {
   return { correctAnswer, question };
 };
 
-export default () => startGame(description, initBrainCalc);
+export default () => startGame(description, generateData);
