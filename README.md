@@ -8,10 +8,8 @@ $ cd backend-project-lvl1
 $ make install
 $ make publish
 $ sudo npm link
-$ brain-games
-ENJOY =)
 ```
-### For example install and brain-progression game (asciinema):  
+### Install and brain-progression game launch:  
 ```
 $ brain-progression
 ```
