@@ -15,7 +15,8 @@ export default (description, generateData) => {
       return 0;
     }
     const { correctAnswer, question } = generateData();
-    const userAnswer = readlineSync.question(`Question: ${question}\nYour answer: `);
+    console.log(`Question: ${question}`);
+    const userAnswer = readlineSync.question('Your answer: ');
     if (userAnswer !== String(correctAnswer)) {
       console.log(`'${userAnswer}' is wrong answer =(. Correct answer was '${correctAnswer}'.`);
       console.log(`Let's try again, ${userName}!`);
