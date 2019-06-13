@@ -1,7 +1,7 @@
 import startGame from '..';
 import getRandomInt from '../utils';
 
-const description = 'Answer "yes" if given number is prime. Otherwise answer "no".\n';
+const description = 'Answer "yes" if given number is prime. Otherwise answer "no".';
 
 const isPrime = (num) => {
   if (num <= 1) {

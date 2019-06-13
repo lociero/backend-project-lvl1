@@ -1,7 +1,7 @@
 import startGame from '..';
 import getRandomInt from '../utils';
 
-const description = 'What number is missing in the progression?\n';
+const description = 'What number is missing in the progression?';
 
 const generateData = () => {
   const lengthOfProgression = 10;
