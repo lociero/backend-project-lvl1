@@ -1,4 +1,4 @@
-import startGame from '..';
+import playGame from '..';
 import getRandomInt from '../utils';
 
 const description = 'What number is missing in the progression?';
@@ -26,4 +26,4 @@ const generateData = () => {
   return { correctAnswer, question };
 };
 
-export default () => startGame(description, generateData);
+export default () => playGame(description, generateData);
