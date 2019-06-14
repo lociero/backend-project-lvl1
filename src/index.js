@@ -25,5 +25,5 @@ export default (description, generateData) => {
     console.log('Correct!');
     iter(roundsCount - 1);
   };
-  return iter(totalRoundsCount);
+  iter(totalRoundsCount);
 };
