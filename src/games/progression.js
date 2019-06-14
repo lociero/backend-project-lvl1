@@ -3,24 +3,25 @@ import getRandomInt from '../utils';
 
 const description = 'What number is missing in the progression?';
 
+const progressionLength = 10;
+
 const generateProgression = (step, acc, length) => {
   if (acc.length === length) {
     return acc;
   }
-  const lastElement = acc[acc.length - 1];
-  const newAcc = acc.concat(lastElement + step);
+  const newElement = acc[acc.length - 1] + step;
+  const newAcc = acc.concat(newElement);
   return generateProgression(step, newAcc, length);
 };
 
 const generateData = () => {
-  const lengthOfProgression = 10;
-  const stepSize = getRandomInt(1, 5);
-  const startNumber = getRandomInt(0, 10);
+  const step = getRandomInt(1, 5);
+  const firstProgressionElement = getRandomInt(0, 10);
 
-  const progression = generateProgression(stepSize, [startNumber], lengthOfProgression);
-  const indexForChange = getRandomInt(1, lengthOfProgression - 2);
-  const correctAnswer = `${progression[indexForChange]}`;
-  progression[indexForChange] = '..';
+  const progression = generateProgression(step, [firstProgressionElement], progressionLength);
+  const hiddenElementIndex = getRandomInt(1, progressionLength - 2);
+  const correctAnswer = `${progression[hiddenElementIndex]}`;
+  progression[hiddenElementIndex] = '..';
   const question = progression.join(' ');
 
   return { correctAnswer, question };
