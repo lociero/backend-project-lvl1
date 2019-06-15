@@ -1,5 +1,5 @@
 install:
-	npm install --save-dev @babel/core @babel/cli @babel/node @babel/preset-env
+	npm install
 start-calc:
 	npx babel-node ./src/bin/brain-calc.js
 start-even:
