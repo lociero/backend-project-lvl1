@@ -17,13 +17,13 @@ export default (description, generateData) => {
     const { correctAnswer, question } = generateData();
     console.log(`Question: ${question}`);
     const userAnswer = readlineSync.question('Your answer: ');
-    if (userAnswer !== correctAnswer) {
+    if (userAnswer === correctAnswer) {
+      console.log('Correct!');
+      iter(counter - 1);
+    } else {
       console.log(`'${userAnswer}' is wrong answer =(. Correct answer was '${correctAnswer}'.`);
       console.log(`Let's try again, ${userName}!`);
-      return;
     }
-    console.log('Correct!');
-    iter(counter - 1);
   };
   iter(roundsCount);
 };
